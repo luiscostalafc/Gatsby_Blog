@@ -1,13 +1,22 @@
 import React from "react";
-import { Link } from 'gatsby';
 
-import Layout from "../components/Layout"
-import SEO from "../components/seo"
+import Layout from "../components/Layout";
+import SEO from "../components/seo";
+import PostItem from '../components/PostItem';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Home</h1>
+    <PostItem
+      slug="/about/"
+      background="blue"
+      category="Misc"
+      date="16 de Abril de 2020"
+      timeToRead="5"
+      title="O título..."
+      description="A descrição...."
+    
+    />
      
   </Layout>
 )
